@@ -7,7 +7,7 @@ import CatImage from './CatImage.js'
 
 export default function CatDetails({}) {
     const appState = useAppState();
-    const [catInfo] = catDetails({ ItemDescription: [] });
+    const [catInfo] = CatDetails({ ItemDescription: [] });
   
     console.log(catInfo);
   
