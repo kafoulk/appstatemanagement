@@ -1,7 +1,7 @@
 import React from 'react';
 import useAppState from '@/useHooks/useAppState';
 import {Grid, Button, Header} from 'semantic-ui-react';
-import CatImage from './components/CatImage';
+import CatImage from '../components/CatImage';
 
 
 export default function Favorites() {

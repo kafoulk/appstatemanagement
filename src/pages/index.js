@@ -1,6 +1,6 @@
 import React from 'react';
 import { Grid, Button, Header, ItemDescription } from 'semantic-ui-react';
-import CatImage from './components/CatImage';
+import CatImage from '../components/CatImage';
 import useAppState from '@/useHooks/useAppState';
 
 export default function Home() {
