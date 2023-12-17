@@ -7,24 +7,11 @@ import CatImage from './CatImage.js'
 
 export default function CatDetails({}) {
     const appState = useAppState();
-    const [catInfo] = getCatDetails({ ItemDescription: [] });
-    // const router = useRouter();
-  
-    // React.useEffect(function () {
-    //   if (catInfo.id !== router.description && router.description) {
-    //     console.log('Load in cat info', router.description);
-    //     fetch(`https://api.thecatapi.com/v1/images/${router.description}`)
-    //       .then((r) => r.json())
-    //       .then(function (r) {
-    //         setCatDetails(r);
-    //       })
-    //       .catch((e) => setCatDetails({ loading: false, name: router.query.name, stats: [] }));
-    //   }
-    // };
+    const [catInfo] = catDetails({ ItemDescription: [] });
   
     console.log(catInfo);
   
-    // console.log(router.query);
+
   
     const ItemDescription =
       catInfo.id.length === 0
